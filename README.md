@@ -1,4 +1,4 @@
-# backupy
+# backupy 0.1
 Command line tool for creating zip archives with tailored inclusions / exclusions
 
 Creates a zip-archive of the folder where the script is executed (or `<root>` if given).
