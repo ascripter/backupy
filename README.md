@@ -34,4 +34,5 @@ Options:
 - logging can't deal with non-ASCII characters. Files are included to zip-archive while console raises `UnicodeEncodeError: 'charmap' codec can't encode character '\u0308' in position 54: character maps to <undefined>`. No entry in the log-files appears.
 
 ## Feature Ideas
+- Show time needed for action (build, zip)
 - Expose zip parameters to user
