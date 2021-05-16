@@ -29,3 +29,9 @@ Options:
 - `--show=<MB>`: Min. item size in MB to show in the csv-file. Triggers the "granularity" at which manual edits can be applied later. For smaller items the backup policy of the parent directory is adopted [default: `1`]
 - `--filemax=<MB>`: Size-filter to exclude files larger `<MB>` from backup. A negative value disables the option [default: `-1`]
 - `--dp=<depth>`: Max. recursion depth for editing backup paths. A negative value doesn't limit the recursion depth [default: `-1`]
+
+## Known Issues
+- logging can't deal with non-ASCII characters. Files are included to zip-archive while console raises `UnicodeEncodeError: 'charmap' codec can't encode character '\u0308' in position 54: character maps to <undefined>`. No entry in the log-files appears.
+
+## Feature Ideas
+- Expose zip parameters to user
